@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" type="text/css" href="AppointmentStyle.css"/>
+</head>
+
+<script>
+
+function setAction(form) {
+
+	 form.action = "index.html";
+
+    alert("appointment booked successfully");
+	
+	 
+    return true;
+    }
+	
+</script>
+
+<body>
+
+<div class="topnav">
+   <img src="imgs/1.jpg" align="left" width="200" >
+   <a class="active " href="index.html"><font size="6">Home </font></a>
+   <a href="Remedies.html" ><font size="6">Home Remedies</font></a>
+   <a href="Emergency.html" ><font size="6">Book Ambulance</font></a>
+
+</div>
+
+
+  <center>
+    <form class="book" onsubmit="return setAction(this)">
+      <h2 class="heading">Book Appointment</h2>
+      <table>
+        <tr>
+          <td><p>Name</p></td>
+          <td><input type="text" required></td>
+        </tr>
+        <tr>
+          <td><p>Age</p></td>
+          <td><input type="text" required></td>
+        </tr>
+		 <tr>
+          <td><p>EmailId</p></td>
+          <td><input type="email" required></td>
+        </tr>
+        <tr>
+          <td><p>Select Date for Appointment</p></td>
+          <td><input type="date" required></td>
+        </tr>
+        <tr>
+          <td><p>Select Time</p></td>
+          <td><input type="time" required></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Book Appointment"/></td>
+        </tr>
+      </table>
+    </form>
+  </center>
+</body>
+</html>
